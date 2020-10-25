@@ -8,16 +8,16 @@
 int main (){
 
 	int pessoas, jogos, i;
-	float popular, geral, arquibancada, cadeira; //float do número de pessoas em relação ao total
-	float ppopular, pgeral, parquibancada, pcadeira; //float de porcentagens
-	float atotal; //float de arrecadação total
+	double popular, geral, arquibancada, cadeira; //float do número de pessoas em relação ao total
+	double ppopular, pgeral, parquibancada, pcadeira; //float de porcentagens
+	double atotal[10]; //float de arrecadação total
 	
 
 	scanf("%d", &jogos);
 
-	for (i = 1; i <= jogos; i++) {
+	for (i = 0; i < jogos; i++) {
 
-		scanf("%d%f%f%f%f", &pessoas, &ppopular, &pgeral, &parquibancada, &pcadeira);
+		scanf("%d%lf%lf%lf%lf", &pessoas, &ppopular, &pgeral, &parquibancada, &pcadeira);
 
 		popular = ppopular / 100 * pessoas;
 
@@ -27,12 +27,15 @@ int main (){
 
 		cadeira = pcadeira / 100 * pessoas * 20;
 
-		atotal = popular + geral + arquibancada + cadeira;
-
-		printf("A RENDA DO JOGO N. %d E = %.2f\n", i, atotal);
+		atotal[i] = popular + geral + arquibancada + cadeira;
 
 	}
 
+	for(i = 0; i < jogos; i++){
+
+		printf("A RENDA DO JOGO N. %d E = %.2lf\n", i+1, atotal[i]);
+
+	}
 
 	return 0;
 }

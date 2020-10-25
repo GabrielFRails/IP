@@ -17,16 +17,17 @@ int main(){
 
     } else if(horas % 3 == 0){
 
-        conta_total = horas * 10;
+        conta_total = (horas / 3) * 10;
 
     } else if(horas % 3 != 0){
 
-        i = (horas / 3) + 1;
-        conta_total = i * 10;
+        i = horas - (horas / 3 * 3);
+        conta_total = ((horas / 3) * 10) + (i * 5);
 
     }
 
-    printf("O VALOR A PAGAR E = %.2f", conta_total);
+    printf("O VALOR A PAGAR E = %.2f\n", conta_total);
+    //printf("%d\n", i);
 
     return 0;
 }

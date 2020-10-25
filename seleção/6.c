@@ -28,7 +28,7 @@ int main(){
 
     }
 
-    printf("NOTA = %1.f CONCEITO = %c\n", nota_aluno, conceito);
+    printf("NOTA = %.1f CONCEITO = %c\n", nota_aluno, conceito);
 
     return 0;
 }

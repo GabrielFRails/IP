@@ -2,18 +2,21 @@
 
 int main(){
 
-    double tempC = 0, tempF = 0;
+    double tempC[10], tempF[10];
     int cont = 0, i = 0;
     scanf("%d", &cont);
 
-    
+    for(i = 0; i < cont; i++){
 
-    for(i = 1; i <= cont; i++){
+        scanf("%lf", &tempF[i]);
 
-        scanf("%lf", &tempF);
+        tempC[i] = 5 * (tempF[i] - 32) / 9;
 
-        tempC = 5 * (tempF - 32) / 9;
-        printf("%.2lf FAHRENHEIT EQUIVALE A %2.lf CELSIUS\n", tempF, tempC);
+    }
+
+    for(i = 0; i < cont; i++){
+
+        printf("%.2lf FAHRENHEIT EQUIVALE A %.2lf CELSIUS\n", tempF[i], tempC[i]);
 
     }
 

@@ -7,7 +7,7 @@ int main(){
 
     if(x % 2 == 0){
 
-        for(i = 0; i <= y; i++){
+        for(i = 0; i < y; i++){
 
            printf("%d ", x);
            x = x + 2;

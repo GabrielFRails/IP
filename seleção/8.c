@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /*
 Este Programa calcula y a partir de x.
@@ -20,11 +19,11 @@ int main(){
 
     }else if(x > 1){
 
-        y = pow(x, 2);
+        y = x * x;
 
     }
 
-    printf("Y = %d", y);
+    printf("Y = %d\n", y);
 
     return 0;
 }

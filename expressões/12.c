@@ -11,7 +11,7 @@ int main() {
 	dS = aV * tempoS * tempoS / 2;
 	work = massaKg * velocidade * velocidade / 2;
 
-	printf("VELOCIDADE = %.2lf, ESPAÇO PERCORRIDO = %.2lf, TRABALHO REALIZADO = %.2lf\n", velocidadeKm, dS, work);
+	printf("VELOCIDADE = %.2lf\nESPACO PERCORRIDO = %.2lf\nTRABALHO REALIZADO = %.2lf\n", velocidadeKm, dS, work);
 
 	return 0;
 }
