@@ -4,10 +4,10 @@
 int digit_count(long int n);
 int main(){
 
-    long int n;
-    scanf("%ld", &n);
+    int n = pow(10, 2);
+    //scanf("%ld", &n);
 
-    printf("Numero de digitos: %d", digit_count(n));
+    printf("Numero de digitos: %d", n);
 
     return 0;
 }

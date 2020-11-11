@@ -13,10 +13,12 @@ int main(){
     for(i=0; i<n; i++){
         scanf("%*c");
         scanf("%c", &c);
-        //scanf("%*c");
-        //scanf("%[^\n]", str);
+        scanf("%*c");
+        scanf("%[^\n]", str);
         
-       printf("%c\n", c);
+        d = busca_char(c, str);
+        if(d==-1) printf("Caractere %c nao encontrado.\n", c);
+        else printf("Caractere %c encontrado no indice %d da string.\n", c, d);
         
     }
 
@@ -30,5 +32,3 @@ int busca_char(char s, char *t){
     }
     if(i==strlen(t)) return -1;
 }
-
-
