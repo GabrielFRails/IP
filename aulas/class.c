@@ -17,7 +17,7 @@ typedef struct ponto3d{
 
 int main(){
 
-    
+       
 
     return 0;
 
