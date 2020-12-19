@@ -18,13 +18,12 @@ int main(){
     for(i=0; i<casos; i++){ //fazendo cada caso de teste
         scanf("%d", &quantify); //lendo quantas frações vamos escrever
 
-        fracao.num = calloc(quantify, sizeof(int));
+        fracao.num = calloc(10, sizeof(int));
         //aqui eu aloco o tanto de memóri necessária para quantify's frações necessárias
-        fracao.den = calloc(quantify, sizeof(int));
+        fracao.den = calloc(10, sizeof(int));
 
-        for(j=0; j<quantify; j++) 
-            scanf("%d/%d", &fracao.num[j], &fracao.den[j]); //lendo os valores das frações
-
+        while((scanf("%d/%d", &fracao.num[j], &fracao.den[j]))!=EOF);
+            
         printf("Caso de teste %d\n", i+1);
         for(j=0; j<quantify; j++)
             for(k=0; k<quantify; k++){
