@@ -50,11 +50,10 @@ Poly * poly_new(int ord){
 void poly_print(Poly * p){
     int i, j;
     if(p == NULL) return;
-    for(i=p->ordem+1; i>=0; i--){
-        if(p->coef[i]> 0) printf("+");
-        printf("%.1lfx^%d", p->coef[i], i);
+    for(i=p->ordem; i>=0; i--){
+        if(p->coef[i] >= 0) printf("+");
+        printf("%.1lfx^%d", p->coef[p->ordem-1], i);
     }
-    printf("\n");
 }
 
 Poly * poly_sum( Poly * A, Poly * B ){

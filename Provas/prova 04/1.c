@@ -12,8 +12,8 @@ int main(){
 
     int i, j, k, l, r, m, N, M, u1, u2; 
     scanf("%d %d", &N, &M);
-    User ***mat; // declaração de variável ponteiro para ponteiro
-    mat = malloc(N * sizeof(User**)); // alocando o vetor de ponteiros
+    User ***mat; 
+    mat = malloc(N * sizeof(User**));
     
     for(i=0; i<N; i++){
         mat[i] = malloc(sizeof(User*)*N);
