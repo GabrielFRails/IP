@@ -6,10 +6,6 @@
 #include <string.h>
 #include <math.h>
 
-#define pi 3.14
-
-
-
 typedef struct{
     char code[2];
     double real, img; //Parte real e imaginária do número
@@ -104,7 +100,7 @@ void printComplexPolar(Complex *number);
  * @return endereço para o complexo resultante 
  */
 
-Complex * Soma_complexo(Complex * c1, Complex * c2);
+Complex * complexo_sum(Complex * c1, Complex * c2);
 
 /**
  * @brief realiza a subtração de dois complexos
@@ -114,7 +110,7 @@ Complex * Soma_complexo(Complex * c1, Complex * c2);
  * @return endereço para o complexo resultante 
  */
 
-Complex * complexSub(Complex * a1, Complex *a2);
+Complex * complexo_sub(Complex * c1, Complex *c2);
 
 /**
  * @brief  realiza a multiplicação entre dois números complexos

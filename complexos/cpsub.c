@@ -25,14 +25,14 @@ int main(int argc, char ** argv){
     } //else printComplexAlg(complex1);
 
     complex2 = readComplex(argv[2]);
-    if(complex1 == NULL){
+    if(complex2 == NULL){
         printf("Não foi possível abrir \"%s\"\n", argv[2]);
         free(complex2);
         free(complex1);
         return 0;
     } //else printComplexAlg(complex2);
 
-    resultante = complexSub(complex1, complex2);
+    resultante = complexo_sub(complex1, complex2);
     free(complex1);
     free(complex2);
 
